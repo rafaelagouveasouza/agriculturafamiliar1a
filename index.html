@@ -1,124 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conexão Campo & Cidade</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Cabeçalho -->
     <header>
         <h1>🌱 Conexão Campo & Cidade</h1>
-        <p>Aproximando produtores rurais e consumidores urbanos.</p>
+        <p>Fortalecendo a agricultura familiar e aproximando produtores e consumidores.</p>
     </header>
 
-    <!-- Banner Principal -->
-    <section>
+    <section class="hero">
         <h2>Do campo para a sua mesa</h2>
+
         <p>
-            Conheça pequenos agricultores da sua região e valorize a produção local.
+            Conheça pequenos agricultores da sua região e descubra a importância
+            de valorizar quem produz os alimentos que consumimos diariamente.
         </p>
-        <button>Conhecer Produtores</button>
+
+        <button onclick="rolarParaCupom()">
+            Ganhar Cupom
+        </button>
     </section>
 
-    <!-- Sobre o Projeto -->
     <section>
         <h2>Sobre o Projeto</h2>
+
         <p>
-            O Conexão Campo & Cidade é uma iniciativa que busca aproximar
-            consumidores urbanos dos pequenos agricultores, fortalecendo a
-            agricultura familiar e incentivando o consumo de alimentos frescos,
-            saudáveis e produzidos localmente.
+            O Conexão Campo & Cidade é uma iniciativa que busca aproximar consumidores
+            urbanos dos pequenos agricultores, promovendo a agricultura familiar,
+            o desenvolvimento sustentável e o consumo consciente.
         </p>
     </section>
 
-    <!-- Benefícios para a Cidade -->
     <section>
         <h2>Benefícios para os Consumidores</h2>
 
-        <article>
-            <h3>🥬 Alimentos Mais Frescos</h3>
-            <p>Produtos colhidos recentemente e com mais qualidade.</p>
-        </article>
+        <div class="card">
+            <h3>🥬 Produtos Mais Frescos</h3>
+            <p>Alimentos colhidos recentemente e com maior qualidade.</p>
+        </div>
 
-        <article>
+        <div class="card">
             <h3>💚 Consumo Consciente</h3>
             <p>Valorização da produção local e sustentável.</p>
-        </article>
+        </div>
 
-        <article>
+        <div class="card">
             <h3>🤝 Conheça Quem Produz</h3>
-            <p>Mais transparência sobre a origem dos alimentos.</p>
-        </article>
+            <p>Maior proximidade e confiança na origem dos alimentos.</p>
+        </div>
     </section>
 
-    <!-- Benefícios para os Agricultores -->
     <section>
         <h2>Benefícios para os Agricultores</h2>
 
-        <article>
-            <h3>📢 Maior Divulgação</h3>
-            <p>Mais visibilidade para pequenos produtores.</p>
-        </article>
+        <div class="card">
+            <h3>📢 Divulgação</h3>
+            <p>Mais visibilidade para pequenos produtores rurais.</p>
+        </div>
 
-        <article>
-            <h3>💰 Novas Oportunidades de Venda</h3>
+        <div class="card">
+            <h3>💰 Novas Oportunidades</h3>
             <p>Contato direto com consumidores interessados.</p>
-        </article>
+        </div>
 
-        <article>
+        <div class="card">
             <h3>🌾 Fortalecimento da Agricultura Familiar</h3>
-            <p>Valorização do trabalho realizado no campo.</p>
-        </article>
-    </section>
-
-    <!-- Produtores em Destaque -->
-    <section>
-        <h2>Produtores em Destaque</h2>
-
-        <div>
-            <h3>Sítio Boa Esperança</h3>
-            <p>Produção de hortaliças orgânicas.</p>
-        </div>
-
-        <div>
-            <h3>Chácara Sol Nascente</h3>
-            <p>Frutas frescas e produtos artesanais.</p>
-        </div>
-
-        <div>
-            <h3>Família Oliveira</h3>
-            <p>Produção de mel e derivados.</p>
+            <p>Reconhecimento do trabalho realizado no campo.</p>
         </div>
     </section>
 
-    <!-- Importância da Conexão Campo-Cidade -->
     <section>
         <h2>Por que essa conexão é importante?</h2>
 
         <p>
-            O campo produz os alimentos que chegam diariamente à cidade.
-            Quando consumidores apoiam pequenos agricultores, contribuem para
-            o desenvolvimento local, a sustentabilidade e a segurança alimentar.
+            A cidade depende do campo para a produção de alimentos. Ao apoiar
+            pequenos agricultores, contribuímos para uma economia mais justa,
+            sustentável e fortalecemos a agricultura familiar.
         </p>
     </section>
 
-    <!-- Chamada para ação -->
-    <section>
-        <h2>Faça Parte Dessa Rede</h2>
+    <section id="cupom">
+        <h2>🎁 Cupom de Incentivo</h2>
+
         <p>
-            Apoie produtores locais e ajude a fortalecer a agricultura familiar.
+            Clique no botão abaixo e receba um cupom simbólico de desconto para
+            incentivar a compra de produtos da agricultura familiar.
         </p>
 
-        <button>Quero Conhecer os Produtores</button>
+        <button id="btnCupom">
+            Gerar Cupom
+        </button>
+
+        <div id="resultado-cupom"></div>
     </section>
 
-    <!-- Rodapé -->
     <footer>
         <p>© 2026 Conexão Campo & Cidade</p>
-        <p>Projeto de valorização da agricultura familiar.</p>
+        <p>Valorizando quem produz, aproximando quem consome.</p>
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>
